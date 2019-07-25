@@ -1,6 +1,6 @@
 # gp_blog
 
-A bare minimum page with graftpress at the back.
+A bare minimum page with [graftpress](https://github.com/amitu/graftpress) at the back.
 
 ## Getting Started
 
@@ -21,44 +21,39 @@ Rust 1.36.0
 install graft-cli and graftpress using pip
 
 ```
-pip install graft-cli
-cargo install graftpress
+$ pip install graft-cli
+$ cargo install graftpress
 
 ```
 
 move inside the project folder
 
 ```
-cd gp_blog
+$ cd gp_blog
 
 ```
 
 install elm
 
 ```
-graft-cli init
+$ graft-cli init
 
 ```
 
-
-
-
-
- 
 
 ## Deployment
 
 build elm files
 
 ```
-graft-cli build
+$ graft-cli build
 
 ```
 
 run server
 
 ```
-graftpress
+$ graftpress
 
 ```
 
@@ -69,4 +64,4 @@ go to https://127.0.0.1:3000
 ## Built With
 
 * [graft](https://github.com/amitu/graft) 
-* [graft](https://github.com/amitu/graftpress)
+* [graftpress](https://github.com/amitu/graftpress)
