@@ -25,7 +25,7 @@ $ cargo install graftpress
 
 ```
 
-move inside the project folder
+Clone the repo and move inside the project folder
 
 ```
 $ cd gp_blog

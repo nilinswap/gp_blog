@@ -1,0 +1,11 @@
+[package]
+name = "gp_blog"
+version = "0.1.0"
+authors = ["nilinswap <nilinswap@gmail.com>"]
+description = "blog written using graftpress"
+license = "BSD-2-Clause"
+edition = "2018"
+
+
+[dependencies]
+graftpress = "^0.1.0"
