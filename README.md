@@ -9,7 +9,6 @@ These instructions will get you a copy of the graftpress  project up and running
 ### Prerequisites
 
 
-
 ```
 node 8
 Python 3.7
@@ -18,10 +17,10 @@ Rust 1.36.0
 
 ### Installing
 
-install graft-cli and graftpress using pip
+install graftpress-cli and graftpress using pip
 
 ```
-$ pip install graft-cli
+$ pip install graftpress-cli
 $ cargo install graftpress
 
 ```
@@ -36,7 +35,7 @@ $ cd gp_blog
 install elm
 
 ```
-$ graft-cli init
+$ graftpress-cli init
 
 ```
 
@@ -46,7 +45,7 @@ $ graft-cli init
 build elm files
 
 ```
-$ graft-cli build
+$ graftpress-cli build
 
 ```
 
