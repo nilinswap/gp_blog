@@ -4912,17 +4912,17 @@ var elm$json$Json$Decode$errorToStringHelp = F2(
 	});
 var elm$core$Platform$Cmd$batch = _Platform_batch;
 var elm$core$Platform$Cmd$none = elm$core$Platform$Cmd$batch(_List_Nil);
-var author$project$Markdown$init = function (c) {
+var author$project$MarkdownStyle$init = function (c) {
 	return _Utils_Tuple2(
 		{config: c.config, uid: c.uid},
 		elm$core$Platform$Cmd$none);
 };
 var elm$core$Platform$Sub$batch = _Platform_batch;
 var elm$core$Platform$Sub$none = elm$core$Platform$Sub$batch(_List_Nil);
-var author$project$Markdown$subscriptions = function (_n0) {
+var author$project$MarkdownStyle$subscriptions = function (_n0) {
 	return elm$core$Platform$Sub$none;
 };
-var author$project$Markdown$update = F2(
+var author$project$MarkdownStyle$update = F2(
 	function (msg, model) {
 		return _Utils_Tuple2(model, elm$core$Platform$Cmd$none);
 	});
@@ -4948,6 +4948,8 @@ var elm$virtual_dom$VirtualDom$toHandlerInt = function (handler) {
 var elm$html$Html$div = _VirtualDom_node('div');
 var elm$virtual_dom$VirtualDom$text = _VirtualDom_text;
 var elm$html$Html$text = elm$virtual_dom$VirtualDom$text;
+var elm$virtual_dom$VirtualDom$style = _VirtualDom_style;
+var elm$html$Html$Attributes$style = elm$virtual_dom$VirtualDom$style;
 var elm$core$String$isEmpty = function (string) {
 	return string === '';
 };
@@ -8752,7 +8754,7 @@ var hecrj$html_parser$Html$Parser$Util$toVirtualDomEach = function (node) {
 			return elm$html$Html$text('');
 	}
 };
-var author$project$Markdown$view2 = function (model) {
+var author$project$MarkdownStyle$view2 = function (model) {
 	var _n0 = hecrj$html_parser$Html$Parser$run(model.config.body);
 	if (_n0.$ === 'Ok') {
 		var lst = _n0.a;
@@ -8760,7 +8762,13 @@ var author$project$Markdown$view2 = function (model) {
 			[
 				A2(
 				elm$html$Html$div,
-				_List_Nil,
+				_List_fromArray(
+					[
+						A2(elm$html$Html$Attributes$style, 'color', 'green'),
+						A2(elm$html$Html$Attributes$style, 'background-color', 'red'),
+						A2(elm$html$Html$Attributes$style, 'height', '90px'),
+						A2(elm$html$Html$Attributes$style, 'width', '100%')
+					]),
 				hecrj$html_parser$Html$Parser$Util$toVirtualDom(lst))
 			]);
 	} else {
@@ -8791,11 +8799,11 @@ var author$project$Realm$wrapped = F2(
 				]),
 			html);
 	});
-var author$project$Markdown$view = function (model) {
+var author$project$MarkdownStyle$view = function (model) {
 	return A2(
 		author$project$Realm$wrapped,
 		model.uid,
-		author$project$Markdown$view2(model));
+		author$project$MarkdownStyle$view2(model));
 };
 var elm$browser$Browser$External = function (a) {
 	return {$: 'External', a: a};
@@ -9021,9 +9029,9 @@ var elm$browser$Browser$element = _Browser_element;
 var elm$json$Json$Decode$andThen = _Json_andThen;
 var elm$json$Json$Decode$field = _Json_decodeField;
 var elm$json$Json$Decode$string = _Json_decodeString;
-var author$project$Markdown$main = elm$browser$Browser$element(
-	{init: author$project$Markdown$init, subscriptions: author$project$Markdown$subscriptions, update: author$project$Markdown$update, view: author$project$Markdown$view});
-_Platform_export({'Markdown':{'init':author$project$Markdown$main(
+var author$project$MarkdownStyle$main = elm$browser$Browser$element(
+	{init: author$project$MarkdownStyle$init, subscriptions: author$project$MarkdownStyle$subscriptions, update: author$project$MarkdownStyle$update, view: author$project$MarkdownStyle$view});
+_Platform_export({'MarkdownStyle':{'init':author$project$MarkdownStyle$main(
 	A2(
 		elm$json$Json$Decode$andThen,
 		function (uid) {

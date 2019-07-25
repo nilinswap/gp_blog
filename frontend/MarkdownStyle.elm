@@ -1,4 +1,4 @@
-module Markdown exposing (main)
+module MarkdownStyle exposing (main)
 
 import Browser
 import Css exposing (..)
@@ -86,7 +86,11 @@ view2 model =
     case Html.Parser.run model.config.body of
         Ok lst ->
             [ div
-                []
+                [ style "color" "green"
+                , style "background-color" "red"
+                , style "height" "90px"
+                , style "width" "100%"
+                ]
                 (Html.Parser.Util.toVirtualDom lst)
             ]
 
