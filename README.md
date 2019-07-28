@@ -11,7 +11,7 @@ These instructions will get you a copy of the graftpress  project up and running
 
 ```
 node 8
-Python 3.7
+Python 3.6+
 Rust 1.36.0
 ```
 
