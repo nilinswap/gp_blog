@@ -1,7 +1,7 @@
--- $hello
+-- $basic
 -- @body ~markdown
 # Swapnil Sharma.
 
-This is My Blog.
-Go to: [link](http://nilinswap.me/gp_blog/foo)
+
+Hi, Welcome to my home. I am a Software Developer at Acko. Sometime back I created a small game called [snake-wasm](http://nilinswap.me/gp_blog/snakewasm) for a hackathon organised by [Acko](http://www.acko.com). It was developed with the help of Web-Assembly.
 
