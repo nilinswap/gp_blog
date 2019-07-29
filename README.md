@@ -58,6 +58,15 @@ $ graftpress
 
 go to https://127.0.0.1:3000
 
+To publish website(statically) to say 'docs' folder, open another terminal 
+while keeping graftpress server running, checkout to project folder and enter
+
+```
+$ graftpress-cli publish docs
+
+```
+
+You will see a new folder 'docs' with website content.
 
 
 ## Built With
